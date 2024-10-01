@@ -38,7 +38,7 @@ const HomePage = () => {
             <ProductCard key={index} product={product} />
           ))}
         </SimpleGrid>
-        {products.length === 0 && (
+        {products && products.length === 0 && (
           <Text
             fontSize="xl"
             textAlign={"center"}
